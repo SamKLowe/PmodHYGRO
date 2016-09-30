@@ -1,0 +1,33 @@
+#######################################
+# Syntax Coloring Map For HYGRO
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+HYGRO	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+get_temp	KEYWORD2
+get_humidity	KEYWORD2
+write_register	KEYWORD2
+read_register	KEYWORD2
+init	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+HUMIDITY	LITERAL1
+TEMPERATURE	LITERAL1
+CONFIG	LITERAL1
+DEVICE_ID	LITERAL1
+MANUFACTURER_ID	LITERAL1
+SERIAL_1	LITERAL1
+SERIAL_2	LITERAL1
+SERIAL_3	LITERAL1
