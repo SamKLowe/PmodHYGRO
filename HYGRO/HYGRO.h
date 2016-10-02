@@ -24,13 +24,14 @@
 /* ------------------------------------------------------------ */
 
 #include <Wire.h>
+#include "Arduino.h"
 
 /* ------------------------------------------------------------ */
 /*					Register Declarations						*/
 /* ------------------------------------------------------------ */
 
-#define HUMIDITY		0x00
-#define TEMPERATURE		0x01
+#define HUMIDITY		0x01
+#define TEMPERATURE		0x00
 #define CONFIG			0x02
 #define SERIAL_1		0xFB
 #define SERIAL_2		0xFC
@@ -50,10 +51,13 @@ public:
   void begin();
   void init();
   
-  uint16_t get_temp(void);
-  uint16_t get_humidity(void);
+  //get functions
+  double get_temp(void);
+  double get_humidity(void);
+  uint16_t get_deviceID(void);
+  uint16_t get_manufacturerID(void);
     
-  
+  //register functions
   void write_register(uint8_t reg_addr, uint16_t data);
   uint16_t read_register(uint8_t reg_addr);
   

@@ -13,11 +13,13 @@ HYGRO	KEYWORD1
 #######################################
 
 begin	KEYWORD2
+init	KEYWORD2
 get_temp	KEYWORD2
 get_humidity	KEYWORD2
+get_deviceID	KEYWORD2
+get_manufacturerID	KEYWORD2
 write_register	KEYWORD2
 read_register	KEYWORD2
-init	KEYWORD2
 
 
 #######################################
